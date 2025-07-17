@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <title>Krypton</title>
+</head>
+
+<body>
+    <div id="upper">
+        <h1 id="title">Krypton</h1>
+        <button id="btListOfReports">List of reports</button>
+
+        <nav class="nav">
+            <a href="#" class="nav-item is-active" onclick="onHome()" active-color="orange">Home</a>
+            <a href="#" class="nav-item" onclick="onReports()" active-color="blue">Live Reports</a>
+            <a href="#" class="nav-item" onclick="onAbout()" active-color="green">About</a>
+            <span class="nav-indicator"></span>
+        </nav>
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search for a currency..." onkeyup="filterCurrencies()">
+            <button id="butSearch">Search</button>
+        </div>
+    </div>
+
+    <div id="listOfReports" style="display: none;">
+        <h2>List of reports</h2>
+        <div id="currencyReport"></div>
+        <button id="btClose">close</button>
+    </div>
+
+    <div class="pages">
+        <div id="pageHome">
+            <div id="loading">
+                <div class="loading-spinner"></div>
+                <span class="loadingText">Loading…</span>
+            </div>
+            <div id="Coins"></div>
+        </div>
+
+        <div id="pageReports" style="display: none;">
+            <h2 id="reportsNone">You must select up to five currencies to display the chart.</h2>
+            <div id="chart"></div>
+        </div>
+
+        <div id="pageAbout" style="display: none;">
+            <h4>About:</h4>
+            <p>Hello! I'm Yair, 27 years old, a student with a passion for technology, web development, and user
+                experience design.</p><br>
+            <h5>About the site:</h5>
+            <p>This site was built as a personal project to allow users to track digital currencies in real time. The
+                site includes features such as:</p>
+            <ul>
+                <li>A dummy report on the market value of digital currencies.</li>
+                <li>Ability to mark selected currencies and create a custom report.</li>
+                <li>View selected currencies on a personal chart.</li>
+                <li>A modern and interactive user experience.</li>
+                <li>Support for quick search by currency name.</li>
+                <li>Smart caching of information to improve user experience (cache).</li>
+            </ul><br>
+            <h5>Website Goals:</h5>
+            <p>My main goal was to create a friendly and simple platform that would help users understand the world of
+                digital currencies in an accessible way. I believe that everyone deserves the opportunity to learn and
+                get to know this field, and the website is the first step towards that.</p><br>
+            <h5>Acknowledgements:</h5>
+            <p>Thank you for taking the time to explore my site! I am always open to comments, ideas for improvement,
+                and new collaborations.</p><br>
+            <span>© All rights reserved to "cryptonite" by Yair Dror 2025.</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
