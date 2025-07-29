@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <title>Krypton</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if (window.innerWidth <= 768) {
+            var meta = document.createElement('meta');
+            meta.name = "viewport";
+            meta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+            document.head.appendChild(meta);
+        }
+    </script>
 </head>
 
 <body>
