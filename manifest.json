@@ -1,6 +1,6 @@
 {
     "name": "App Name",
-    "short_name": "App Name Shortcut",
+    "short_name": "Krpton",
     "start_url": "./",
     "display": "standalone",
     "background_color": "#ffffff",
